@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar is-warning has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="p1.webp" alt="logo">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </a>
+
+        </div>
+        <a class="navbar-item">Home</a>
+        <div class="navbar-menu" id="menu">
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    My Account
+                </a>
+                <a class="navbar-item">
+                    Shopping cart(0)
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="section py-2">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul>
+                <li>Select</li>
+                <li>Add to cart</li>
+                <li>Make payment</li>
+            </ul>
+        </nav>
+    </div>
+    <section class="section ">
+        <div class="columns is-vcentered ">
+
+            <div class="column is-5 has-background-primary">
+                <h1 class="is-size-1">Your Favourite Maggi</h1>
+                Maggi is an international brand of seasonings, instant soups, and noodles that originated in Switzerland
+                in late 19th century. The Maggi company was acquired by Nestlé in 1947
+            </div>
+            <div class="column is-4">
+                <img src="maggi.jpg" alt="maggi image" style="max-height: 600px;">
+            </div>
+            <div class="column is-3 has-background-danger">
+                A delicacy which comes with its own tastemaker and gets cooked in two minutes is the simplest tasty food
+                enjoyed across the world.
+                Discover exciting MAGGI Noodle Recipes with Egg, Cheese, Paneer & Chicken and a wide variety of Quick &
+                Easy Lunch, Dinner, Breakfast and Snack Recipes by MAGGI
+            </div>
+
+        </div>
+    </section>
+    <div class="columns is-variable">
+        <div class="column has-text-danger">
+            <div class="tabs is-boxed">
+                <ul>
+                    <li class="is-active" data-target="product"><a>PRODUCT INFO</a></li>
+                    <li data-target="delivery"><a>DELIVERY INFO</a></li>
+                </ul>
+            </div>
+            <div id="tab-content">
+                <div id="product">
+                    <h1 class="is-size-3 is-dark">Product info</h1>Maggi is a product that belongs to Nestle India,
+                    which is one of the leading fast food companies in the country. The various Maggi products are
+                    stocks, instant noodles, ketchups and instant soups. ... Maggi is a product of Nestlé India, a
+                    subsidiary of Nestlé of Switzerland.
+                </div>
+                <div id="delivery" class="is-hidden">
+                    <h1 class="is-size-3 is-dark">Delivery info</h1>Retail food delivery is a courier service in which a
+                    restaurant, store, or independent food-delivery company delivers food to a customer. An order is
+                    typically made either through a restaurant or grocer's website or mobile app, or through a food
+                    ordering company
+                </div>
+            </div>
+        </div>
+        <div class="column is-1">
+
+        </div>
+        <div class="column is-4  has-text-centered">
+            <div class="card">
+                <header class="card-header-title is-centered ">
+                    <p>Know More</p>
+                </header>
+                <div class="card-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit qui perferendis beatae iste
+                    reiciendis ipsam obcaecati esse possimus ab nam!
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class=" has-text-centered">
+        <button class="btn has-background-warning " id="bbtn">SIGN-UP</button>
+
+    </div>
+
+    <div class="modal " id="mod">
+        <div class="modal-background " id="modbg"></div>
+        <div class="modal-content has-background-white py-5 px-5 has-text-centered">Join The Club
+            <form>
+                <div class="field">
+                    <div class="control">
+                        <input type="text" placeholder="NAME">
+                    </div>
+                    <div class="control">
+                        <input type="email" placeholder="EMAIL ID">
+                    </div>
+                    <div class="control">
+                        <input type="number" placeholder="MOBILE NUMBER">
+                    </div>
+                </div>
+            </form>
+            <button class="btn">SIGN_UP</button>
+        </div>
+    </div>
+
+
+    <footer class="footer has-text-centered title has-background-grey-light">
+        Copy-Rights @ Nikhil Reddy
+    </footer>
+    <script src="App.js"></script>
+</body>
+
+</html>
